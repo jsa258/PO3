@@ -1,0 +1,248 @@
+/* font-family: 'Cormorant Garamond', serif; - text,buttons
+font-family: 'Montserrat', sans-serif; - heading for nav
+font-family: 'Lato', sans-serif; - subheading */
+
+/*
+BANNER START
+*/
+
+.banner {
+  height: 53vh;
+  background-color:#943855;
+  -ms-display: flex;
+  -webkit-display: flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-img {
+  height: auto;
+  width: 30%;
+  margin-left: 30%;
+}
+
+.quote-on-banner {
+  text-align: left;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+  width: 70%;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3.5px;
+  -webkit-text-stroke-color: #fff;
+}
+
+
+
+/*
+ABOUT START
+*/
+
+#about{
+  width: 80%;
+  margin: auto;
+}
+
+.subheading {
+  padding-top: 4.5em;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.about {
+  background-color: white;
+  width: 100%;
+  margin: auto;
+  -ms-display: flex;
+  -webkit-display: flex;
+  display: flex;
+  position: relative;
+  height: auto;
+  margin-top: 4rem;
+}
+
+.about-des {
+  background-color: white;
+  padding-left: 8%;
+  padding-right: 8%;
+  height: 80%;
+  margin: auto;
+}
+
+.about-des p {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: .9rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.4rem;
+  color: #8D8D8D;
+  letter-spacing: 0.04rem;
+  margin-top: 4%;
+  max-width: 500px;
+}
+
+.about-des h1 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.06rem;
+}
+
+.about-img {
+  margin-right: 0;
+}
+
+.about-img img {
+  width: 100%;
+  /*overflow: hidden;*/
+}
+
+.viewmore {
+  font-family: 'Titillium Web', sans-serif;
+  margin-top: 2.6rem;
+}
+
+.viewmore-button {
+  padding: 8px 25px;
+  font-size: 0.666rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background-color: transparent;
+  color: #000;
+  margin-top: 60px;
+  border: solid 1px #000;
+}
+
+.viewmore-button:hover {
+  background: #000;
+  color: #FFF;
+}
+
+/*
+UPDATES START
+*/
+
+#new-in{
+  width:80%;
+  margin:auto;
+}
+
+#new-title{
+  /* width:80%;
+  margin:auto; */
+}
+
+.updates{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.update-item{
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 20%;
+  min-width: 10em;
+  max-width: 20em;
+}
+
+.update-item img{
+  max-width: 100%;
+  height: auto;
+}
+
+.update-item img:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50)
+}
+
+@media (max-width:60em) {
+  .quote-on-banner {
+    top: 30%;
+    left: 50%;
+    font-size: 4em;
+    -webkit-text-stroke-width: 2.5px;
+  }
+
+  .banner-img {
+    width: 55%;
+  }
+
+  .about {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+
+  .about-des {
+    padding: 5% 15% 10% 15%;
+    margin-top: 0;
+  }
+
+  .about-des p {
+    line-height: 1.6rem;
+    letter-spacing: 0.04rem;
+    margin-top: 2%;
+    max-width: 500px;
+    margin-bottom: 3%;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+  }
+
+  .about-des h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .about-img {
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .about-img img {
+    overflow: hidden;
+    padding-bottom: 4em;
+  }
+}
+
+@media (max-width:40em) {
+
+  #about{
+    width: 100%;
+  }
+
+  .subheading{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .banner-img {
+    width: 75%;
+  }
+
+  .quote-on-banner {
+    top: 45%;
+    font-size: 3em;
+    -webkit-text-stroke-width: 1.5px;
+  }
+
+  .viewmore, .new-title {
+    text-align: center;
+  }
+
+}
