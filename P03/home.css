@@ -1,14 +1,16 @@
 /* font-family: 'Cormorant Garamond', serif; - text,buttons
 font-family: 'Montserrat', sans-serif; - heading for nav
 font-family: 'Lato', sans-serif; - subheading */
-
+body{
+  background-color: #dfddc7;
+  position: absolute;
+}
 /*
 BANNER START
 */
 
 .banner {
   height: 53vh;
-  background-color:#943855;
   -ms-display: flex;
   -webkit-display: flex;
   display: flex;
@@ -26,7 +28,6 @@ BANNER START
 .banner-img {
   height: auto;
   width: 30%;
-  margin-left: 30%;
 }
 
 .quote-on-banner {
@@ -52,18 +53,21 @@ ABOUT START
 */
 
 #about{
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
 .subheading {
-  padding-top: 4.5em;
+  position: relative;
+  padding-top: 2em;
+  width:20%;
   margin: auto;
   font-family: sans-serif;
+  font-size: 3em;
 }
 
 .about {
-  background-color: white;
+  position: relative;
   width: 100%;
   margin: auto;
   -ms-display: flex;
@@ -75,11 +79,11 @@ ABOUT START
 }
 
 .about-des {
-  background-color: white;
+  margin-top:20%;
   padding-left: 8%;
   padding-right: 8%;
   height: 80%;
-  margin: auto;
+  margin-bottom: 10%;
 }
 
 .about-des p {
@@ -88,14 +92,14 @@ ABOUT START
   font-weight: 300;
   letter-spacing: 1px;
   line-height: 1.4rem;
-  color: #8D8D8D;
+  color:#584b42;
   letter-spacing: 0.04rem;
-  margin-top: 4%;
+  margin-top: 10%;
   max-width: 500px;
 }
 
 .about-des h1 {
-  font-size: 1.2rem;
+  font-size: 1.5em;
   font-weight: 400;
   letter-spacing: 0.06rem;
 }
@@ -131,31 +135,33 @@ ABOUT START
 }
 
 /*
-UPDATES START
+projects START
 */
 
-#new-in{
+#projects{
+  position: relative;
   width:80%;
   margin:auto;
 }
 
+
 #new-title{
-  /* width:80%;
-  margin:auto; */
+font-size: 2em;
 }
 
 .updates{
+  padding: 10px;
   margin-top: 4rem;
   margin-bottom: 4rem;
   display: flex;
-  justify-content: space-around;
+  justify-content:center;
   flex-wrap: wrap;
 }
 
 .update-item{
   display: flex;
   flex-grow: 1;
-  flex-basis: 20%;
+  flex-basis: 100%;
   min-width: 10em;
   max-width: 20em;
 }
@@ -171,6 +177,7 @@ UPDATES START
 }
 
 @media (max-width:60em) {
+
   .quote-on-banner {
     top: 30%;
     left: 50%;
@@ -226,6 +233,7 @@ UPDATES START
   }
 
   .subheading{
+    left: 0;
     width: 50%;
     margin: auto;
     text-align: center;

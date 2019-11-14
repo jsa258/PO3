@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Intro{
+  display: flex;
+  flex-direction: column;
+}
+
+.Summary{
+  background-color: red;
+  max-height: 50vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.title{
+  width:30%;
+  background-color: yellow;
+  margin: 5% 5% 5% 10%;
+
+}
+
+.description{
+  width:50%;
+  background-color: yellow;
+  margin: 5% 10%;
+}
+
+.Summary2{
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+}
+.launch{
+  width:30%;
+  background-color: yellow;
+  margin: 0% 5% 0% 10%;
+}
+
+.others{
+  width:50%;
+  background-color: yellow;
+  margin: 0% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.Concept{
+  margin: 15% 0%;
+  display: flex;
+  flex-direction: column;
+}
+.Concept-child, .Design-child{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+.Concept .description{
+    width: 35%;
+}
+.Concept  img{
+  max-width: 40%;
+  margin: 0% 10% 0% 0%;
+}
+.Design{
+  display: flex;
+  flex-direction: column;
+}
+.Design-child-img  img{
+  max-width: 20%;
+  margin: 5% 3%;
+}
+.Design-child-img, .Step1-child-img{
+  display: flex;
+  justify-content: center;
+}
+.Step1-child img{
+  width: 50%;
+}
+
+@media screen and (max-width:950px) {
+  .Summary,.Concept-child, .Design-child, .Design-child-img{
+    flex-direction: column;
+  }
+  .title{
+    margin: 5% 5% 0% 15%;
+  }
+  .description{
+  margin: 5% 5% 2% 15%;
+    width: 70%;
+  }
+  .Summary2{
+    flex-direction: column;
+  }
+  .launch{
+    margin: 5% 5% 0% 15%;
+  }
+  .others{
+  margin: 5% 5% 0% 15%;
+  width: 80%;
+  }
+  .Concept .description{
+      width: 70%;
+  }
+  .Concept  img{
+    max-width: 68%;
+    margin: 10% 5% 0% 10%;
+  }
+  .Design-child-img  img{
+    max-width: 80%;
+    margin: 5% 5%;
+  }
+}
