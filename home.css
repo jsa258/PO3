@@ -86,8 +86,13 @@ projects START
 
 @media screen and (max-width:850px) {
   .quote-on-banner {
-    right: 55%;
-    text-align: center;
+    text-align: left;
+    position: absolute;
+    left:25%;
+    background-color: white;
+    width:50%;
+    opacity: 0.7;
+    padding-left: 10px;
   }
   .banner-img {
     width: 80%;
@@ -143,4 +148,25 @@ projects START
     opacity: 0.25;
     width: 50%;
   }
+}
+
+
+.footer {
+  margin-top: 48%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-items .social {
+  padding: 10px;
+  letter-spacing: 10px;
+  font-size: 1.5em;
+}
+
+.footer-items .social a {
+  color: black;
+}
+.footer-items .social a:hover{
+  opacity: 0.4;
 }

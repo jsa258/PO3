@@ -2,9 +2,10 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  color: #584b42;
 }
 
-p{
+p {
   font-family: 'EB Garamond', serif;
 }
 
@@ -25,7 +26,7 @@ nav {
   z-index: 20;
 }
 
-.logo{
+.logo {
   color: #584b42;
   letter-spacing: 5px;
   font-size: 18px;
@@ -35,9 +36,8 @@ nav {
   text-decoration: none;
 }
 
-
 .nav-links {
-  color:#584b42;
+  color: #584b42;
   display: flex;
   float: left;
   justify-content: space-around;
@@ -48,7 +48,7 @@ nav {
 }
 
 .nav-links a {
-  color:#584b42;
+  color: #584b42;
   text-decoration: none;
   list-style: none;
 }
@@ -68,7 +68,7 @@ nav {
 .burger div {
   width: 25px;
   height: 0.47vh;
-  background-color:  #584b42;
+  background-color: #584b42;
   margin: 5px;
 }
 
@@ -81,7 +81,7 @@ nav {
     position: absolute;
     height: 30vh;
     top: 17vh;
-    background-color:  #dfddc7;
+    background-color: #fffdf9;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -96,47 +96,29 @@ nav {
     display: block;
   }
 
+  .footer-items {
+    margin-top: 20%;
+  }
 
-.footer-items {
-margin-top: 20%;
-}
+  .logo header {
+    color: #584b42;
+  }
 
+  .nav-active {
+    transform: translateX(0%);
+  }
 
-.logo header {
-  color: #584b42;
-}
-
-.nav-active {
-  transform: translateX(0%);
-}
-
-/*
+  /*
     begin citations
     */
-.citations {
-  margin: 10%;
-  width: 85%;
-}
+  .citations {
+    margin: 10%;
+    width: 85%;
+  }
 
-/*
+  /*
       end citations
       */
-
-
-/*
+  /*
     begin footer
     */
-.footer {
-  margin-top: 48%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.footer-items .social{
-padding: 10px;
-letter-spacing: 10px;
-font-size: 1.5em;
-}
-.footer-items .social a{
-    color:black;
-}
