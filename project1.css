@@ -9,46 +9,43 @@
 }
 
 .Summary{
-  background-color: red;
   max-height: 50vh;
   display: flex;
   flex-direction: row;
 }
 
 .title{
+  font-size: 2.5em;
   width:30%;
-  background-color: yellow;
   margin: 5% 5% 5% 10%;
 
 }
 
 .description{
   width:50%;
-  background-color: yellow;
   margin: 5% 10%;
 }
 
 .Summary2{
   display: flex;
   flex-direction: row;
-  background-color: green;
 }
 .launch{
   width:30%;
-  background-color: yellow;
   margin: 0% 5% 0% 10%;
 }
-
+.fa-link{
+  padding-left: 10px;
+}
 .others{
   width:50%;
-  background-color: yellow;
   margin: 0% 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 .Concept{
-  margin: 15% 0%;
+  margin: 10% 0%;
   display: flex;
   flex-direction: column;
 }
@@ -58,26 +55,51 @@
   justify-content:space-around;
 }
 .Concept .description{
-    width: 35%;
+    width: 40%;
 }
 .Concept  img{
-  max-width: 40%;
+  max-width: 35%;
   margin: 0% 10% 0% 0%;
 }
 .Design{
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
 }
+
 .Design-child-img  img{
   max-width: 20%;
   margin: 5% 3%;
 }
-.Design-child-img, .Step1-child-img{
+.Design-child-img{
   display: flex;
   justify-content: center;
 }
-.Step1-child img{
-  width: 50%;
+.Step1-child{
+  display: flex;
+  flex-direction: row;
+}
+.Step1-child-img{
+  display: flex;
+  justify-content: space-around;
+  margin: 0% 10%;
+}
+.Step1-child-img img{
+  width: 40%;
+}
+.Step2{
+  margin-top: 10%;
+}
+.Step2 .Step1-child-img img{
+  width: 80%;
+}
+
+.Conclusion{
+  margin: 14% 0%;
+}
+.Conclusion-child{
+  display: flex;
+  flex-direction: row;
 }
 
 @media screen and (max-width:950px) {
@@ -98,6 +120,7 @@
     margin: 5% 5% 0% 15%;
   }
   .others{
+    flex-direction: column;
   margin: 5% 5% 0% 15%;
   width: 80%;
   }
@@ -111,5 +134,19 @@
   .Design-child-img  img{
     max-width: 80%;
     margin: 5% 5%;
+  }
+  .Step1-child{
+    flex-direction: column;
+    margin: 5% 0%;
+  }
+  .Step1-child-img{
+    flex-direction: column;
+  }
+  .Step1-child-img  img{
+    width: 80%;
+    margin-left: 9%;
+  }
+  .Conclusion-child{
+    flex-direction: column;
   }
 }

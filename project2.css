@@ -1,0 +1,9 @@
+.Step2-child-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Step2-child-img img {
+  width:70%;
+}

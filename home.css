@@ -1,24 +1,17 @@
 /* font-family: 'Cormorant Garamond', serif; - text,buttons
 font-family: 'Montserrat', sans-serif; - heading for nav
 font-family: 'Lato', sans-serif; - subheading */
-body{
-  background-color: #dfddc7;
-  position: absolute;
+body {
+  background-color: white;
 }
+
 /*
 BANNER START
 */
-
 .banner {
   height: 53vh;
-  -ms-display: flex;
-  -webkit-display: flex;
   display: flex;
-  -ms-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-justify-content: center;
-  -webkit-justify-content: center;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -27,230 +20,127 @@ BANNER START
 
 .banner-img {
   height: auto;
-  width: 30%;
+  width: 50%;
 }
 
 .quote-on-banner {
-  text-align: left;
   color: black;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 5em;
-  width: 70%;
-  text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 3.5px;
-  -webkit-text-stroke-color: #fff;
+  font-size: 3.5em;
+  right: 65%;
 }
-
-
 
 /*
 ABOUT START
 */
-
-#about{
-  width: 90%;
-  margin: auto;
-}
-
-.subheading {
-  position: relative;
-  padding-top: 2em;
-  width:20%;
-  margin: auto;
-  font-family: sans-serif;
-  font-size: 3em;
-}
-
 .about {
-  position: relative;
-  width: 100%;
-  margin: auto;
-  -ms-display: flex;
-  -webkit-display: flex;
+  height: 45vh;
+  margin-top: 16%;
+  margin-bottom: 16%;
   display: flex;
+  flex-direction: row;
+}
+
+.aboutme {
   position: relative;
-  height: auto;
-  margin-top: 4rem;
+  margin-top: 5%;
+  margin-left: 16%;
+  font-size: 3em;
+
+}
+.about-img{
+  position:absolute;
+  left:20%;
+  margin-top: 13%;
+  width: 15%;
 }
 
 .about-des {
-  margin-top:20%;
-  padding-left: 8%;
-  padding-right: 8%;
-  height: 80%;
-  margin-bottom: 10%;
-}
-
-.about-des p {
-  font-family: 'Titillium Web', sans-serif;
-  font-size: .9rem;
-  font-weight: 300;
-  letter-spacing: 1px;
-  line-height: 1.4rem;
-  color:#584b42;
-  letter-spacing: 0.04rem;
-  margin-top: 10%;
-  max-width: 500px;
-}
-
-.about-des h1 {
-  font-size: 1.5em;
-  font-weight: 400;
-  letter-spacing: 0.06rem;
-}
-
-.about-img {
-  margin-right: 0;
-}
-
-.about-img img {
-  width: 100%;
-  /*overflow: hidden;*/
-}
-
-.viewmore {
-  font-family: 'Titillium Web', sans-serif;
-  margin-top: 2.6rem;
-}
-
-.viewmore-button {
-  padding: 8px 25px;
-  font-size: 0.666rem;
-  letter-spacing: 2px;
-  text-decoration: none;
-  background-color: transparent;
-  color: #000;
-  margin-top: 60px;
-  border: solid 1px #000;
-}
-
-.viewmore-button:hover {
-  background: #000;
-  color: #FFF;
+  width: 45%;
+  justify-content:flex-end;
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
 }
 
 /*
 projects START
 */
-
-#projects{
-  position: relative;
-  width:80%;
-  margin:auto;
-}
-
-
-#new-title{
-font-size: 2em;
-}
-
-.updates{
-  padding: 10px;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+.projects{
+    height: 60vh;
+    margin: 10% 0%;
+  }
+.projects .p-img a{
   display: flex;
-  justify-content:center;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
-
-.update-item{
-  display: flex;
-  flex-grow: 1;
-  flex-basis: 100%;
-  min-width: 10em;
-  max-width: 20em;
+.projects .p-img img:hover {
+  opacity: .5;
 }
-
-.update-item img{
-  max-width: 100%;
+.p-img img{
+  max-width: 50%;
   height: auto;
 }
 
-.update-item img:hover{
-  opacity: 0.5;
-  filter: alpha(opacity=50)
-}
-
-@media (max-width:60em) {
-
+@media screen and (max-width:850px) {
   .quote-on-banner {
-    top: 30%;
-    left: 50%;
-    font-size: 4em;
-    -webkit-text-stroke-width: 2.5px;
+    right: 55%;
+    text-align: center;
   }
-
   .banner-img {
-    width: 55%;
+    width: 80%;
+  }
+  .about{
+    flex-direction: column;
   }
 
-  .about {
-    width: 100%;
-    display: block;
-    position: relative;
+  .aboutme {
+    margin-left: 10%;
   }
-
   .about-des {
-    padding: 5% 15% 10% 15%;
-    margin-top: 0;
+    margin: 8% 10%;
+    align-items: center;
+    width:70%;
+  }
+  .project-img{
+    max-width: 85%;
+    height: auto;
+  }
+  .about-img{
+    opacity: 0;
   }
 
-  .about-des p {
-    line-height: 1.6rem;
-    letter-spacing: 0.04rem;
-    margin-top: 2%;
-    max-width: 500px;
-    margin-bottom: 3%;
-    text-align: center;
-    font-family: 'EB Garamond', serif;
-  }
-
-  .about-des h1 {
-    font-size: 1.3rem;
-    text-align: center;
-  }
-
-  .about-img {
-    height: 300px;
-    overflow: hidden;
-  }
-
-  .about-img img {
-    overflow: hidden;
-    padding-bottom: 4em;
-  }
 }
 
-@media (max-width:40em) {
-
-  #about{
+@media screen and (max-width:550px){
+  .aboutme {
+    margin-top: 10%;
+    text-align: center;
+    margin:5%;
+  }
+  .about-des {
+    text-align: center;
+    margin:  3% 12% 5% 8%;
+    width:85%;
+  }
+  .quote-on-banner{
+    font-size: 2em;
+    right: 65%;
+  }
+  .banner-img {
     width: 100%;
   }
-
-  .subheading{
-    left: 0;
+  .projects{
+    margin-top: 30%;
+    }
+  .p-img img{
+    max-width: 90%;
+    height: auto;
+  }
+  .about-img{
+    opacity: 0.25;
     width: 50%;
-    margin: auto;
-    text-align: center;
   }
-
-  .banner-img {
-    width: 75%;
-  }
-
-  .quote-on-banner {
-    top: 45%;
-    font-size: 3em;
-    -webkit-text-stroke-width: 1.5px;
-  }
-
-  .viewmore, .new-title {
-    text-align: center;
-  }
-
 }

@@ -56,6 +56,7 @@ nav {
 .nav-links a:hover {
   color: #a34a28;
   opacity: 0.8;
+  border-bottom: 2px solid #a34a28;
 }
 
 /*creating the drop down logo*/
@@ -94,7 +95,12 @@ nav {
   .burger {
     display: block;
   }
+
+
+.footer-items {
+margin-top: 20%;
 }
+
 
 .logo header {
   color: #584b42;
@@ -121,132 +127,16 @@ nav {
     begin footer
     */
 .footer {
-  width: 100%;
-  padding: 40px 20px 0px 90px;
-  text-align: justify;
-  box-sizing: border-box;
-  display: block;
-  color: #0b4235;
-}
-
-.inner-footer {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  padding: 10px 0px;
+  margin-top: 48%;
   display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
+  flex-direction: row;
   justify-content: center;
 }
-
-.footer-items {
-  color:#943855;
-  width: 25%;
-  padding: 0px 15px;
-  margin: 0px;
-  box-sizing: border-box;
-  font-size: 13px;
-  opacity: 0.9;
+.footer-items .social{
+padding: 10px;
+letter-spacing: 10px;
+font-size: 1.5em;
 }
-
-.footer-items p {
-  color:#943855;
-  text-align: left;
-  line-height: 25px;
-  font-size: 14px;
-  width: 90%;
-}
-
-.footer-items ul {
-  list-style: none;
-  font-size: 13px;
-}
-
-.footer-items ul li, .footer-items ul li a {
-  text-decoration: none;
-  margin: 10px 0px;
-  color:#943855;
-}
-
-.footer-items a:hover {
-  border-bottom: 1px solid black;
-}
-
-.footer-items h5, .footer-items h6 {
-  font-size: 0.9375em;
-}
-
-.footer-items h6 {
-  text-align: justify;
-  text-transform: uppercase;
-}
-
-.contact i {
-  margin: 10px 10px;
-}
-
-.contact span {
-  display: block;
-}
-
-.social i {
-  margin: 10px 10px 10px 10px;
-  font-size: 1.25em;
-  flex-direction: row;
-  color: black;
-}
-
-.footer-bottom {
-  width: 100%;
-  padding: 10px 0px;
-  margin: 0px;
-  font-size: 0.9375em;
-  text-align: center;
-}
-
-@media screen and (max-width:2000px) {
-  .drop-down ul {
-    margin: 5% 10% 10% 5%;
-  }
-}
-
-@media screen and (max-width:950px) {
-  .footer-items {
-    width: 50%;
-    margin: 15px 0px;
-  }
-
-  .footer-bottom {
-    text-align: left;
-  }
-
-  .drop-down {
-    margin-bottom: 0em;
-  }
-
-  .drop-down ul {
-    margin: 5% 10% 18% 5%;
-  }
-}
-
-@media screen and (max-width:600px) {
-  .footer-items {
-    width: 100%;
-    margin: 20px 0px;
-  }
-
-  .footer-bottom {
-    text-align: left;
-    font-size: 0.625em;
-  }
-
-  .drop-down h1 {
-    margin: 10% 10% 0% 5%;
-    text-align: left;
-  }
-
-  .drop-down ul {
-    margin: 5% 10% 32% 5%;
-  }
+.footer-items .social a{
+    color:black;
 }
