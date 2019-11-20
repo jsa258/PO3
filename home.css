@@ -27,7 +27,6 @@ BANNER START
   color: black;
   position: absolute;
   font-size: 3.5em;
-  right: 65%;
 }
 
 /*
@@ -84,6 +83,52 @@ projects START
   height: auto;
 }
 
+.Work{
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+  margin: 10% 0%;
+}
+.work-des{
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#a{
+  width: 40%;
+background-color:white;
+}
+#b{
+  width: 60%;
+  background-color:lightgrey;
+
+}
+.mywork{
+  font-size: 1em;
+  float: left;
+
+}
+.work-des img{
+  width: 90%;
+  padding: 0% 3%;
+}
+.work-des .button{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 10%;
+}
+.work-des img:hover{
+  opacity: .8;
+}
+.project-name{
+  position: absolute;
+  margin: 10% 8% 10% 8%;
+  font-size: 4.0em;
+  width: 30%;
+}
+
 @media screen and (max-width:850px) {
   .quote-on-banner {
     text-align: left;
@@ -97,25 +142,23 @@ projects START
   .banner-img {
     width: 80%;
   }
-  .about{
+  .Work{
+    display: flex;
     flex-direction: column;
+      flex-wrap: wrap;
+    justify-content:center;
   }
-
-  .aboutme {
-    margin-left: 10%;
-  }
-  .about-des {
-    margin: 8% 10%;
+  .work-des{
+    display: flex;
+    flex-direction: column;
+      flex-wrap: wrap;
     align-items: center;
-    width:70%;
+    margin: 14% 0%;
   }
-  .project-img{
-    max-width: 85%;
-    height: auto;
-  }
-  .about-img{
-    opacity: 0;
-  }
+    #b{
+      width: 100%;
+      height: auto;
+    }
 
 }
 
@@ -140,10 +183,7 @@ projects START
   .projects{
     margin-top: 30%;
     }
-  .p-img img{
-    max-width: 90%;
-    height: auto;
-  }
+
   .about-img{
     opacity: 0.25;
     width: 50%;
