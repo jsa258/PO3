@@ -7,6 +7,12 @@
 .Step2-child-img img {
   width:70%;
 }
+.banner-img img{
+  width: 100%;
+  height:20%;
+  opacity: 0.6;
+
+}
 .footer {
   margin-top: 0%;
   display: flex;

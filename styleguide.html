@@ -17,23 +17,33 @@
 
 <body>
 
-  <header>MY PORTFOLIO
-  </header>
+  <header>MY PORTFOLIO</header>
 
+  <section class="main_nav">
+    <nav>
+      <ul class="nav_links">
+        <li><a href="#interactive_elements">Interactive Elements</a></li>
+        <li><a href="#text_elements"> Text Elements</a></li>
+        <li><a href="#combined_elements">Combined elements</a></li>
+    </nav>
 
+    <nav>
+      <ul class="nav_links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="home.html">Projects</a></li>
+        <li><a href="home.html">Contact Us</a></li>
+        <li><a href="https://drive.google.com/open?id=1j_xSwfPZSON4EBJ4059GiFaoVS7PJaOxhbSkUV3VEL4">Citations</a></li>
+      </ul>
 
-  <section class="Bio">
-
-    <h1>BIO</h1>
-    <p>My name is Jenny Situ and I am a third-year SFU student majoring in the Interactive Arts and Technology program. I have a passion for art and the inspiration for my artworks and design ideas reflect my personal experiences, background, and
-      values. I believe that design is a form of language allowing artists to its audience through different forms of medium. Throughout my studies, I have been introduced to different forms of design techniques which has slowly influence my interest
-      in design and technology. I aspire to pursue a career as a UX designer and participate in designing future innovations.</p>
+    </nav>
 
   </section>
 
-  <section class="Interactive-Elements">
 
+  <section class="Interactive-Elements">
+    <h1>INTERACTIVE ELEMENTS</h1>
     <section class="buttons">
+      <h2>Buttons</h2><br>
       <ul>
         <a class="button" href="home.html" rel="submit">VIEW PROJECTS</a>
         <a class="button" href="add-website-here" rel="see_more">SEE MORE</a>
@@ -41,8 +51,27 @@
       <br>
       <code> &#x3C;a class=&#x22;button&#x22; href=&#x22;add-website-here&#x22; rel=&#x22;submit&#x22;&#x3E;VIEW PROJECTS&#x3C;/a&#x3E;</code>
     </section>
+
+    <section class="buttons">
+      <h2>Lists</h2><br>
+      <ul>
+        <li>Creative</li>
+        <li>Openminded</li>
+        <li>Innovative</li>
+      </ul>
+      <br>
+      <code> &#x3C;a class=&#x22;button&#x22; href=&#x22;add-website-here&#x22; rel=&#x22;submit&#x22;&#x3E;VIEW PROJECTS&#x3C;/a&#x3E;</code>
+    </section>
+
+    <section class="buttons">
+      <h2>In-text Links</h2><br>
+      <a>Launch Project</a>
+      <br><br>
+      <code> &#x3C;a class=&#x22;button&#x22; href=&#x22;add-website-here&#x22; rel=&#x22;submit&#x22;&#x3E;VIEW PROJECTS&#x3C;/a&#x3E;</code>
+    </section>
+
     <section class="nav">
-      <h1>Navigation</h1>
+      <h2>Navigation Links</h2>
       <nav>
         <ul class="nav_links">
           <li><a href="#interactive_elements">About Me</a></li>
@@ -50,11 +79,55 @@
           <li><a href="#Combined elements">Contact</a></li>
       </nav>
     </section>
-    <code> &#x3C;li&#x3E;&#x3C;a href=&#x22;#Projects&#x22;&#x3E;Projects&#x3C;/a&#x3E;&#x3C;/li&#x3E;</code>
+
+      <div class="Input">
+        <h2>Input Text</h2>
+        <br>
+        <form>
+          <div class="form">
+            <label for="cname">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith"><br>
+            <label for="ccnum">Address</label>
+            <input type="text" id="num" name="number" placeholder="1234-2345-3456-4567">
+          </div>
+        </form>
+        <br><br>
+              <code> &#x3C;a class=&#x22;button&#x22; href=&#x22;add-website-here&#x22; rel=&#x22;submit&#x22;&#x3E;VIEW PROJECTS&#x3C;/a&#x3E;</code>
+      </div>
+
+      <div class="Radio">
+        <h2>Radio Button</h2>
+        <br>
+        <form>
+          <input type="radio" name="Plan" value="A" checked> Plan A<br>
+          <input type="radio" name="Plan" value="B"> Plan B<br>
+          <input type="radio" name="Plan" value="C"> Others
+        </form>
+        <br><br>
+              <code> &#x3C;a class=&#x22;button&#x22; href=&#x22;add-website-here&#x22; rel=&#x22;submit&#x22;&#x3E;VIEW PROJECTS&#x3C;/a&#x3E;</code>
+      </div>
   </section>
 
+  <section class="Fonts">
+    <h2>Text Styling</h2>
+    <h4> Heading - 'Noto Serif', serif</h4>
+    <h3> Paragraphs - 'Titillium Web', sans-serif</h3>
+
+
+  </section>
+
+  <section class="Bio">
+    <h1>Combined Elements</h1>
+    <h2>BIO</h2>
+    <p>My name is Jenny Situ and I am a third-year SFU student majoring in the Interactive Arts and Technology program. I have a passion for art and the inspiration for my artworks and design ideas reflect my personal experiences, background, and
+      values. I believe that design is a form of language allowing artists to its audience through different forms of medium. Throughout my studies, I have been introduced to different forms of design techniques which has slowly influence my interest
+      in design and technology. I aspire to pursue a career as a UX designer and participate in designing future innovations.</p>
+
+  </section>
+
+
   <section class="ProjectOne">
-    <h1>PROJECT 1: INFORMATION DESIGN</h1>
+    <h2>PROJECT 1: INFORMATION DESIGN</h2>
     <h2>Description</h2>
     <p>In my information design class, I worked in a group of 3 to design an informative website that addresses the environmental issue of desertification in China. Good teamwork, performance, and management allowed our team to deliver a successful
       final product to our audience.</p>
@@ -83,7 +156,7 @@
   </section>
 
   <section class="ProjectTwo">
-    <h1>PROJECT 2: MAGAZINE</h1>
+    <h2>PROJECT 2: MAGAZINE</h2>
     <h2>Description</h2>
     <p>Working as a group of 3, we designed a magazine on the topic of Samoyeds. This project reflects my graphic design and photoshop skills</p>
     <h2>Evaluation</h2>
@@ -95,30 +168,15 @@
     </div>
   </section>
 
-  <section class="Fonts">
-    <h1>Text Styling</h1>
-    <h4> Heading - 'Noto Serif', serif</h4>
-    <h3> Paragraphs - 'Titillium Web', sans-serif</h3>
-
-
-  </section>
-
 
   <section class="Palette">
-    <h1>Color Palette</h1>
+    <h2>Color Palette</h2>
     <div class="imagery">
       <img src="img/3.png">
       <img src="img/4.png">
     </div>
   </section>
 
-  <section class="Templates">
-    <h1>Sample Templates</h1>
-    <div class="imagery">
-      <img src="img/wire1.jpg">
-      <img src="img/wire2.jpg">
-    </div>
-  </section>
 </body>
 
 </html>
