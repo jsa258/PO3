@@ -5,6 +5,22 @@
   color: #584b42;
 }
 
+@keyframes transition-in {
+  from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+
+  }
+
+}
+.container{
+  animation: transition-in 0.75s;
+}
+
 p {
   font-family: 'EB Garamond', serif;
 }
@@ -40,25 +56,41 @@ nav {
   color: #584b42;
   display: flex;
   float: left;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 30%;
   font-size: 0.875em;
   text-decoration: none;
   list-style: none;
+
 }
 
 .nav-links a {
+  position: relative;
   color: #584b42;
   text-decoration: none;
   list-style: none;
+  padding-bottom:3%;
+}
+.nav-links a::after{
+  content: '';
+  position: absolute;
+  border-bottom: 2px solid black;
+  bottom:0%;
+  width:0%;
+  left: 50%;
+  transition: all 800ms ease;
+}
+.nav-links a:hover:after {
+  left: 0%;
+  width:100%;
 }
 
-.nav-links a:hover {
+/*.nav-links a:hover {
   color: #a34a28;
   opacity: 0.8;
   border-bottom: 2px solid #a34a28;
 }
-
+*/
 /*creating the drop down logo*/
 .burger {
   display: none;

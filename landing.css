@@ -1,0 +1,102 @@
+body {
+/*  https://uigradients.com/*/
+background: #654ea3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*
+LANDING START
+*/
+.container{
+  animation: transition-in 2s;
+  animation-timing-function: ease-out;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 12% 0%;
+}
+
+.landing-quote {
+  font-size: 3.4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3% 0%;
+}
+.landing-img a{
+  margin: 1% 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.landing-img:hover{
+  -webkit-animation: rotation 7s infinite linear;
+}
+
+.landing-img img{
+  width:8%;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+/*.line-bottom {
+  position: relative;
+  left:25%;
+  width:50%;
+  padding-right: 2%;
+}
+
+.line-bottom::after {
+  content: '';
+  position: absolute;
+  border-bottom: 2px solid black;
+  width:0%;
+  bottom: 0%;
+  left: 50%;
+  transition: all 800ms ease;
+}
+
+.line-bottom:hover:after {
+  left: 0%;
+  width:100%;
+}*/
+
+.landing-quote-bottom {
+  display: flex;
+  justify-content: center;
+  padding: 2% 0%;
+}
+
+@media screen and (max-width:500px) {
+  .landing {
+    margin: 55% 0%;
+  }
+
+  .landing-quote {
+    font-size: 2.6em;
+    margin: 0% 2%;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .landing {
+    margin: 65% 0%;
+  }
+
+  .landing-quote {
+    font-size: 2.2em;
+    margin: 0% 3%;
+  }
+}
