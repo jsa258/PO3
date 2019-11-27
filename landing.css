@@ -1,11 +1,19 @@
 body {
 /*  https://uigradients.com/*/
-background: #654ea3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 
 }
-
+.nav-links{
+  display: flex;
+  justify-content:flex-end;
+}
+.nav-links li{
+  margin: 0% 5%;
+}
 /*
 LANDING START
 */
@@ -18,7 +26,8 @@ LANDING START
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 12% 0%;
+  height: 80vh;
+
 }
 
 .landing-quote {
@@ -42,7 +51,41 @@ LANDING START
 .landing-img img{
   width:8%;
 }
-
+.middle{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.mouse{
+  width: 30px;
+  height: 55px;
+  border: 3px solid black;
+  border-radius: 60px;
+  position: absolute;
+}
+.mouse::before{
+  content: '';
+  width: 7px;
+  height:7px;
+  position: absolute;
+  top:30px;
+  background: white;
+  left:50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  opacity: 1;
+  animation: mouse 2s infinite;
+}
+@keyframes mouse{
+  from{
+    opacity: 1;
+    top: 10px;
+  }
+  to{
+    opacity: 0;
+    top:30px;
+  }
+}
 @-webkit-keyframes rotation {
 		from {
 				-webkit-transform: rotate(0deg);
@@ -81,7 +124,7 @@ LANDING START
 
 @media screen and (max-width:500px) {
   .landing {
-    margin: 55% 0%;
+    margin: 25% 0% 56% 0%;
   }
 
   .landing-quote {
@@ -92,7 +135,7 @@ LANDING START
 
 @media screen and (max-width:380px) {
   .landing {
-    margin: 65% 0%;
+    margin: 35% 0%;
   }
 
   .landing-quote {

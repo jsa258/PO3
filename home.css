@@ -153,15 +153,17 @@ projects START
 
   .work-des {
     width: 100%;
+    background-color: yellow;
+
   }
 
   .work-des img {
-    width: 100%;
-    padding: 0% 1%;
+    width: 90%;
   }
+
 }
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:900px) {
   .aboutme {
     margin-top: 10%;
     text-align: center;
@@ -189,7 +191,7 @@ projects START
 
   .about-img {
     opacity: 0.25;
-    width: 50%;
+    width: 80%;
   }
 }
 

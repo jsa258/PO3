@@ -14,7 +14,6 @@
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Montserrat:700|Oswald&display=swap" rel="stylesheet">
   <!-- or directly from unpkg -->
   <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-  <script src="js/responsive.js"></script>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
@@ -23,14 +22,48 @@
 
 <body>
 
+
+    <!-- NAVIGATION STARTS -->
+
+    <nav>
+      <!--burger is the icon for the drop down menu-->
+      <div class="burger">
+        <div class="line1">
+        </div>
+        <div class="line2">
+        </div>
+        <div class="line3">
+        </div>
+      </div>
+
+      <div class="logo">
+        <a href="landing.html" >
+          <header>JENNY SITU</header>
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="home.html">Projects</a></li>
+        <li><a href="about.html">Contact</a></li>
+      </ul>
+
+
+
+    </nav>
+    <!--link to script needed to create the drop down effect-->
+    <script src="js/responsive.js"></script>
+
+    <!-- NAVIGATION ENDS -->
+
   <!-- begin landing page section -->
   <section class="container">
   <main id="swup" class="transition-fade">
     <section class="landing">
       <h1 class="landing-quote" data-aos="fade-up">DESIGN THINKING </h1>
       <h2 class="landing-quote-bottom" data-aos="flip-up">Creative Developer</h1>
-        <div class="landing-img">
-          <a href="home.html"><img src="img/logo-01.png" alt=""></a>
+        <div class="middle">
+          <div class="mouse">
+          </div>
         </div>
     </section>
   </main>

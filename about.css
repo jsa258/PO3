@@ -1,0 +1,192 @@
+* {
+  margin: 0em;
+  padding: 0em;
+  box-sizing: border-box;
+}
+
+/*
+font-family: 'Cormorant Garamond', serif; - text,buttons
+font-family: 'Montserrat', sans-serif; - heading for nav
+<link href="https://fonts.googleapis.com/css?family=Lato:=700&display=swap" rel="stylesheet"> - subheading
+*/
+
+/*
+begin contact us information
+*/
+.container {
+  margin: 6.250em 0em;
+  margin-bottom: 20%;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: inner-container;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.container-left {
+  width: 100%;
+}
+
+.form h2 {
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  color: #0b4235;
+  margin-bottom: 3.125em;
+  width: 95%;
+  font-size: 1.438em;
+}
+
+.form, .contact-form {
+  font-family: 'Lato', sans-serif;
+  align-items: left;
+  margin: 1.875em;
+  padding: 0em 2.500em;
+}
+
+.form-heading, h2 {
+  font-size: 1.875em;
+  margin-bottom: 1.250em;
+  color: #0b4235;
+  text-align: left;
+}
+
+.input-form {
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1.563em;
+}
+
+.inner-msg {
+  padding: 0em 0em;
+  width: 100%;
+  margin-bottom: 1.250em;
+}
+
+.input>input {
+  border: 1px solid grey;
+  align-items: center;
+  width: 13.750em;
+  padding: 8px 2.500em;
+}
+
+.input {
+  margin-bottom: 0.938em;
+}
+.input input:focus, textarea:focus{
+  outline:none;
+}
+.input h3 , .inner-msg h3{
+  display: block;
+  font-size: 0.938em;
+  margin-bottom: 0.938em;
+}
+.input input:hover {
+  border: none;
+  border-bottom:2px solid #f9cbbb;
+}
+.input input:hover h3{
+color: #f9cbbb;
+}
+
+.msg>textarea {
+  width: 100%;
+  padding: 0.938em 2.500em;
+  height: 9.375em;
+}
+
+.container-right {
+  flex-direction: inner-container;
+  height: auto;
+}
+
+.contact-form .container-items  {
+  display: block;
+  padding:0.938em 0.938em 1.250em 0em;
+  margin-bottom: 0.938em 0.938em;
+}
+.container-items h3,p{
+  color: #0b4235;
+  padding-bottom: 0.938em;
+  font-size: 1em;
+}
+.container-items p{
+  font-family: 'Cormorant Garamond', serif;
+  color: #0b4235;
+  font-size: 1.125em;
+}
+.container-items i{
+  padding:0em 0.938em 1.250em 0em;
+  font-size: 1.625em;
+  cursor: pointer;
+  color:#0b4235;
+}
+.container-items i:hover{
+  color:#f9cbbb;
+}
+/*
+submit button
+*/
+.btn {
+  font-family: 'Cormorant Garamond', serif;
+  border: 1px solid grey;
+  padding: 0.938em 1.250em;
+  width: 11.250em;
+  cursor: pointer;
+  transition: all 0.5 ease;
+  text-align: center;
+}
+
+.btn:hover {
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+
+/*
+styling social icons
+*/
+
+
+@media screen and (max-width:56.250em) {
+  .input-form {
+    flex-direction: column;
+  }
+
+  .input:first-child input {
+    margin-bottom: 1.250em;
+  }
+
+  .form .input input {
+    width: 100%;
+  }
+
+  .container-right, .container-left {
+    width: 100%;
+  }
+
+  .container-items {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:36.250em) {
+  .address {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inner-address {
+    margin-bottom: 1.563em;
+  }
+}
