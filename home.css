@@ -1,6 +1,4 @@
-/* font-family: 'Cormorant Garamond', serif; - text,buttons
-font-family: 'Montserrat', sans-serif; - heading for nav
-font-family: 'Lato', sans-serif; - subheading */
+
 body {
   background-color: white;
 }
@@ -8,9 +6,6 @@ body {
 /*
 BANNER START
 */
-nav{
-    /*background-color: #f6da63;*/
-}
 .banner {
   height: 72.5vh;
   display: flex;
@@ -20,122 +15,103 @@ nav{
   position: relative;
   z-index: 1;
   background-color: #f6da63;
-
 }
-/*.banner-img{
-  border: 10px #eb8242;
-}
-.banner-img img{
-  height: auto;
-  width: 65%;
-  position: relative;
-  left:10%;
-  border: 10px #eb8242;
-}
-
-.quote-on-banner {
-  color:black;
-  position: absolute;
-  font-size: 3.5em;
-  text-shadow: 2px 2px 10px black;
-}
-*/
-
 
 /*
 projects START
 */
-
 .Work {
   display: flex;
   flex-direction: row;
-  margin: 5% 0% 10% 0%;
+  margin: 0% 0% 10% 0%;
 }
 
-.work-des {
+.work-img {
   display: flex;
   flex-direction: column;
-  justify-content:flex-end;
+  justify-content: flex-end;
   width: 55%;
 }
 
-.work-title {
-  width: 45%;
-}
-
-.work-title-a {
-  margin-top: 20%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-}
-.work-title-a a{
-  text-decoration: none;
-}
-.work-title-a a:hover{
-  color: #a34a28;
-  border-bottom: 2px solid #a34a28;
-  width:22%;
-}
-.work-title-a a, .work-name {
-  margin: 3% 8% 5% 24%;
-}
-#a{
-  margin-top: 20%;
-}
-.work-title-a h4{
-  font-size: 4em;
-}
-.mywork {
-  font-size: 1em;
-  float: left;
-}
-
-.work-des img {
+.work-img img {
   width: 65%;
-  padding: 0% 3%;
+  float: center;
+  margin: 0% 1% 0% 5%;
 }
 
-.work-des .button {
+
+.work-img .button {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin-bottom: 10%;
 }
 
-.work-des img:hover {
+.work-img img:hover {
   opacity: .8;
 }
 
 .project-name {
-  margin: 10% 8% 5% 24%;
+  margin: 10% 8% 5% 35%;
   font-size: 4.0em;
   width: 30%;
-  text-shadow: 2px 2px 2px black;
+  font-family: 'Libre Baskerville', serif;
 }
 
-@media screen and (max-width:850px) {
-  .quote-on-banner {
-    text-align: left;
-    position: absolute;
-    left: 25%;
-    background-color: white;
-    width: 50%;
-    opacity: 0.7;
-    padding-left: 10px;
-  }
 
-  .banner-img {
-    width: 80%;
-  }
+.work-content {
+  width: 45%;
+}
+
+.work-des {
+  margin-top: 20%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-des  a {
+  text-decoration: none;
+  padding: 1%;
+}
+
+.work-des  a:hover {
+  background-color: #a34a28;
+  color:white;
+  width: 20%;
+}
+
+.work-des  a, .work-name {
+  margin: 0% 8% 5% 35%;
+}
+
+#project-b {
+  margin-top: 20%;
+}
+#project-b .project-name{
+  font-size: 3.2em;
+}
+.work-des  h4 {
+  font-size: 4em;
+}
+
+.mywork {
+  font-size: 1em;
+  float: left;
+}
+
+
+@media screen and (max-width:850px) {
 
   .Work {
     display: flex;
     flex-direction: column;
   }
-.work-title #a{
-  font-size: .9em;
-}
+
+  .work-content #project-b  {
+    font-size: .9em;
+  }
+
   .project-name {
     text-align: center;
     width: 100%;
@@ -143,24 +119,27 @@ projects START
     margin: 8% 0%;
   }
 
-  .work-title {
+  .work-content {
     width: 100%;
   }
 
-  .work-name, .work-title-a a {
+  .work-name, .work-des  a {
     margin-left: 40%;
   }
 
-  .work-des {
+  .work-img {
     width: 100%;
     background-color: yellow;
-
   }
 
-  .work-des img {
-    width: 90%;
+  .work-img img {
+    width: 75%;
+      margin: 0% 0% 0% 12%;
   }
 
+  .work-des  a:hover {
+    width: 22%;
+  }
 }
 
 @media screen and (max-width:900px) {
@@ -194,12 +173,18 @@ projects START
     width: 80%;
   }
 }
+@media screen and (max-width:400px){
+    .work-img img{
+      width: 80%;
+      margin: 0% 0% 0% 10%;
+    }
+}
 
 .footer {
   margin: 5% 0%;
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
 }
 
 .footer-items .social {
@@ -215,20 +200,25 @@ projects START
 .footer-items .social a:hover {
   opacity: 0.4;
 }
-.footer-links{
+
+.footer-links {
   list-style: none;
   margin-top: 10%;
   text-align: center;
 }
-.footer-links li{
+
+.footer-links li {
   margin: 5% 0%;
 }
-.footer-links li:hover{
+
+.footer-links li:hover {
   border-bottom: 1px solid black;
 }
-.footer-links a{
-    text-decoration: none;
+
+.footer-links a {
+  text-decoration: none;
 }
+
 [aos="fade"] {
   opacity: 0;
   transition-property: opacity;

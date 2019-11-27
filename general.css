@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Ibarra+Real+Nova:400,700|Lato|Libre+Baskerville:700|Libre+Franklin:500|Lobster|Merriweather|Playfair+Display|Raleway:400,500|Ubuntu:300&display=swap');
+
 * {
   margin: 0px;
   padding: 0px;
@@ -8,7 +10,7 @@
 @keyframes transition-in {
   from{
     opacity: 0;
-    transform: rotateX(-10deg);
+    transform: rotateX(-15deg);
   }
   to{
     opacity: 1;
@@ -22,29 +24,38 @@
 }
 
 p {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 100;
+  font-size: 0.9em;
+  line-height: 1.8em;
+  /*font-family: 'EB Garamond', serif;*/
 }
+.h1,.h2,.h3{
+font-family: 'Libre Baskerville', serif;
 
+}
 /*
-font-family: 'EB Garamond', serif; - text,buttons
-font-family: 'Montserrat', sans-serif; - heading for nav
-font-family: 'Lato', sans-serif; - subheading
+font-family: 'Ubuntu', sans-serif; - paragraphs
+font-family: 'Libre Franklin', sans-serif; - heading for nav
+font-family: 'Libre Baskerville', serif; - subheading
 
 */
 /*begin nav bar*/
 nav {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: bold;
   text-decoration: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
   min-height: 17vh;
   z-index: 20;
 }
 
 .logo {
   color: #584b42;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   font-size: 18px;
 }
 
@@ -53,7 +64,7 @@ nav {
 }
 
 .nav-links {
-  color: #584b42;
+  color: black;
   display: flex;
   float: left;
   justify-content: space-between;

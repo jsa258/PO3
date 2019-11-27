@@ -3,154 +3,208 @@
   padding: 0;
   box-sizing: border-box;
 }
-.Intro{
+
+.Intro {
   display: flex;
   flex-direction: column;
 }
 
-.Summary{
+.Summary {
   max-height: 50vh;
   display: flex;
   flex-direction: row;
 }
 
-.title{
+.title {
   font-size: 2.5em;
-  width:30%;
+  width: 30%;
   margin: 5% 5% 5% 10%;
-
+  font-family: 'Libre Baskerville', serif;
 }
-.banner-img img{
+
+.banner-img img {
   width: 100%;
   height: auto;
 }
-.description{
-  width:50%;
+
+.description {
+  width: 50%;
   margin: 5% 10%;
 }
 
-.Summary2{
+.Summary2 {
   display: flex;
   flex-direction: row;
 }
-.launch{
-  width:30%;
+
+.launch {
+  width: 30%;
   margin: 0% 5% 0% 10%;
 }
-.fa-link{
+
+.fa-link {
   padding-left: 10px;
 }
-.others{
-  width:50%;
+
+.others {
+  width: 50%;
   margin: 0% 10%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.Concept{
+
+.Concept {
   margin: 10% 0%;
   display: flex;
   flex-direction: column;
 }
-.Concept-child, .Design-child{
+
+.Concept-child, .Design-child {
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
 }
-.Concept .description{
-    width: 40%;
+
+.Concept .description {
+  width: 40%;
 }
-.Concept  img{
+
+.Concept img {
   max-width: 35%;
   margin: 0% 10% 0% 0%;
 }
-.Design{
+
+.Design {
   margin-top: 10%;
   display: flex;
   flex-direction: column;
 }
 
-.Design-child-img  img{
-  max-width: 20%;
-  margin: 5% 3%;
+.Design-child-img img {
+  width: 20%;
+  margin: 5% 2%;
 }
-.Design-child-img{
+
+.Design-child-img {
   display: flex;
   justify-content: center;
 }
-.Step1-child{
+
+.progress-child {
   display: flex;
   flex-direction: row;
 }
-.Step1-child-img{
+
+.progress-child-img {
   display: flex;
-  justify-content: space-around;
-  margin: 0% 10%;
-}
-.Step1-child-img img{
-  width: 40%;
-}
-.Step2{
-  margin-top: 10%;
-}
-.Step2 .Step1-child-img img{
-  width: 80%;
+  flex-direction: column;
+
 }
 
-.Conclusion{
+.progress-child-img img {
+  width: 60%;
+}
+.child-img-top, .progress-child-img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.child-img-bottom{
+  margin: 5% 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.child-img-bottom img,.child-img-top img{
+  width: 30%;
+}
+.graphic {
+  margin-top: 10%;
+}
+
+
+.Conclusion {
   margin: 14% 0%;
 }
-.Conclusion-child{
+
+.Conclusion-child {
   display: flex;
   flex-direction: row;
 }
 
 @media screen and (max-width:950px) {
-  .Summary,.Concept-child, .Design-child, .Design-child-img{
+  .Summary, .Concept-child, .Design-child, .Design-child-img {
     flex-direction: column;
   }
-  .title{
+
+  .title {
+    font-size: 2em;
     margin: 5% 5% 0% 15%;
   }
-  .description{
-  margin: 5% 5% 2% 15%;
+
+  .description {
+    margin: 5% 5% 2% 15%;
     width: 70%;
   }
-  .Summary2{
+
+  .Summary2 {
     flex-direction: column;
   }
-  .launch{
+
+  .launch {
     margin: 5% 5% 0% 15%;
   }
-  .others{
+
+  .others {
     flex-direction: column;
-  margin: 5% 5% 0% 15%;
-  width: 80%;
+    margin: 5% 5% 0% 15%;
+    width: 80%;
   }
-  .Concept .description{
-      width: 70%;
+
+  .Concept .description {
+    width: 70%;
   }
-  .Concept  img{
+
+  .Concept img {
     max-width: 68%;
     margin: 10% 5% 0% 10%;
   }
-  .Design-child-img  img{
-    max-width: 80%;
-    margin: 5% 5%;
-  }
-  .Step1-child{
+
+  .progress-child {
     flex-direction: column;
     margin: 5% 0%;
   }
-  .Step1-child-img{
+  .Conclusion-child {
     flex-direction: column;
   }
-  .Step1-child-img  img{
-    width: 80%;
-    margin-left: 9%;
-  }
-  .Conclusion-child{
+
+  .progress-child-img {
     flex-direction: column;
+  }
+
+  .progress-child-img img {
+    width: 70%;
+    margin: 5% 2%;
+  }
+
+  .child-img-bottom{
+    margin: 5% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .child-img-bottom img{
+    width: 70%;
+    margin: 5% 2%;
+  }
+  .Design-child-img{
+    align-items: center;
+  }
+  .Design-child-img img {
+    width: 60%;
+    margin: 5% 2%;
   }
 }
 
@@ -170,6 +224,7 @@
 .footer-items .social a {
   color: black;
 }
-.footer-items .social a:hover{
+
+.footer-items .social a:hover {
   opacity: 0.4;
 }
