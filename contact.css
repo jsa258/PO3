@@ -76,7 +76,7 @@ h1 {
 }
 
 .social-links a :hover {
-  color: #ff5959;
+  color: #ff6473;
 }
 /*
 Bottom info starts
@@ -178,62 +178,3 @@ Bottom info starts
     padding: 1%;
   }
 }
-
-/*
-@media screen and (max-width:550px) {
-
-  .about-des {
-    text-align: center;
-    margin: 3% 12% 5% 8%;
-    width: 85%;
-  }
-
-  .quote-on-banner {
-    font-size: 2em;
-    right: 65%;
-  }
-
-  .banner-img {
-    width: 100%;
-  }
-
-  .projects {
-    margin-top: 30%;
-  }
-  .aboutme{
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
-    margin-left: 13%;
-  }
-
-  .about-img {
-    opacity: 0.2;
-    width: 60%;
-    margin-top: 35%;
-  }
-
-  .about-des {
-    justify-content: center;
-  }
-
-  .about-img img {
-    margin-right: 10%;
-  }
-
-  .more-info {
-    margin-top: 55%;
-    margin-left: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .contact-info {
-    margin-top: 10%;
-  }
-
-  .ed-info {
-    margin: 10% 0%;
-  }
-}*/

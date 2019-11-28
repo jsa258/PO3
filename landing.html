@@ -8,73 +8,123 @@
 
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="landing.css">
   <link rel="stylesheet" href="aos.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato|Ibarra+Real+Nova|Lobster|Merriweather|Playfair+Display|Raleway&display=swap" rel="stylesheet">
-  <!-- or directly from unpkg -->
-  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
 
-  <title>My Portfolio</title>
+
+  <title>Jenny Situ - Designer</title>
 </head>
 
 <body>
 
+  <!-- NAVIGATION STARTS -->
 
-    <!-- NAVIGATION STARTS -->
-
-    <nav>
-      <!--burger is the icon for the drop down menu-->
-      <div class="burger">
-        <div class="line1">
-        </div>
-        <div class="line2">
-        </div>
-        <div class="line3">
-        </div>
+  <nav>
+    <!--burger is the icon for the drop down menu-->
+    <div class="burger">
+      <div class="line1">
       </div>
-
-      <div class="logo">
-        <a href="landing.html" >
-          <header>JENNY SITU</header>
-        </a>
+      <div class="line2">
       </div>
+      <div class="line3">
+      </div>
+    </div>
 
-      <ul class="nav-links">
-        <li><a href="home.html">Projects</a></li>
-        <li><a href="about.html">Contact</a></li>
-      </ul>
+    <div class="logo">
+      <a href="landing.html">
+        <header>JENNY SITU</header>
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="contact.html">About</a></li>
+      <li><a href="home.html">Projects</a></li>
+      <li><a href="about.html">Contact</a></li>
+    </ul>
 
 
 
-    </nav>
-    <!--link to script needed to create the drop down effect-->
-    <script src="js/responsive.js"></script>
+  </nav>
+  <!--link to script needed to create the drop down effect-->
+  <script src="js/responsive.js"></script>
 
-    <!-- NAVIGATION ENDS -->
+  <!-- NAVIGATION ENDS -->
 
   <!-- begin landing page section -->
   <section class="container">
-  <main id="swup" class="transition-fade">
-    <section class="landing">
-      <h1 class="landing-quote" data-aos="fade-up">DESIGN THINKING </h1>
-      <h2 class="landing-quote-bottom" data-aos="flip-up">Creative Developer</h1>
-        <div class="middle">
-          <div class="mouse">
+    <main id="swup" class="transition-fade">
+      <section class="landing">
+        <h1 class="landing-quote" data-aos="fade-up">"I am the Creative force of my life" </h1>
+        <div class="line"></div>
+        <h2 class="landing-quote-bottom" data-aos="flip-up">Creative Developer</h1>
+          <div class="middle">
+            <div class="mouse">
+            </div>
           </div>
+      </section>
+    </main>
+    <!-- script for scroll animation -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </section>
+
+  <!-- PROJECT 1 -->
+  <section class="container">
+    <section class="Work" id="Work-section">
+      <div class="work-content">
+        <div class="work-des" id="project-a">
+          <h1 class="work-name">My Work</h1>
+          <h2 class="project-name" data-aos="zoom-in">KUBUQI DESERT</h2>
+          <a class="button" href="project1.html" rel="see_more" data-aos="zoom-in">SEE MORE</a>
         </div>
+      </div>
+      <div class="work-img">
+        <a href="project1.html"><img src="img/home1.png" alt="website" data-aos="fade-down"></a>
+      </div>
     </section>
-  </main>
-  <!-- script for scroll animation -->
-  <script src="js/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</section>
 
+    <!-- PROJECT 2 -->
+    <section class="Work">
+      <div class="work-content">
+        <div class="work-des" id="project-b">
+          <h3 class="project-name" data-aos="zoom-in"> MAGAZINE</h3>
+          <a class="button" href="project2.html" rel="see_more" data-aos="zoom-in">SEE MORE</a>
+        </div>
+      </div>
+      <div class="work-img">
+        <a href="project2.html"><img src="img/23.png" alt="magazine" data-aos="fade-down"></a>
+      </div>
+    </section>
+    <!-- script for scroll animation -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
+    <!--BEGIN FOOTER-->
+    <div class="footer">
+      <div class="footer-items">
+        <div class="social">
+          <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="footer-items">
+          <ul class="footer-links">
+            <li><a href="styleguide.html">Styleguide</a></li>
+            <li><a href="https://github.com/jsa258/PO3">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
 </body>
 
 </html>

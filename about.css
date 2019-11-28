@@ -2,6 +2,7 @@
   margin: 0em;
   padding: 0em;
   box-sizing: border-box;
+  color: #45454d;
 }
 
 /*
@@ -45,7 +46,6 @@ begin contact us information
 .form h2 {
   font-family: 'Libre Baskerville', serif;
   text-align: left;
-  color: #0b4235;
   margin-bottom: 3.125em;
   width: 95%;
   font-size: 1.238em;
@@ -62,7 +62,6 @@ begin contact us information
 .form-heading, h2 {
   font-size: 1.7em;
   margin-bottom: 1.250em;
-  color: #0b4235;
   text-align: left;
 }
 
@@ -98,10 +97,10 @@ begin contact us information
 }
 .input input:hover {
   border: none;
-  border-bottom:2px solid #f9cbbb;
+  border-bottom:2px solid #45454d;;
 }
 .input input:hover h3{
-color: #f9cbbb;
+color: #45454d;
 }
 
 .msg>textarea {
@@ -116,23 +115,22 @@ color: #f9cbbb;
   margin-bottom: 0.938em 0.938em;
 }
 .container-items h3,p{
-  color: #0b4235;
   padding-bottom: 0.938em;
   font-size: 1em;
 }
 .container-items p{
   font-family: 'Ubuntu', sans-serif;
-  color: #0b4235;
+
   font-size: 1.125em;
 }
 .container-items i{
   padding:0em 0.938em 1.250em 0em;
   font-size: 1.625em;
   cursor: pointer;
-  color:#0b4235;
+  color: #584b42;
 }
 .container-items i:hover{
-  color:#f9cbbb;
+color: #ff6473;
 }
 /*
 submit button
@@ -140,8 +138,8 @@ submit button
 .btn {
 font-family: 'Libre Baskerville', serif;
   border: 1px solid grey;
-  padding: 1em;
-  width: 9.2em;
+  padding: .6em;
+  width: 10em;
   cursor: pointer;
   transition: all 0.5 ease;
   text-align: center;
@@ -150,7 +148,7 @@ font-family: 'Libre Baskerville', serif;
 .btn:hover {
   border: none;
   color: white;
-  background-color: black;
+  background-color: #584b42;
 }
 
 
@@ -166,9 +164,6 @@ styling social icons
     margin: 0%;
     width: 100%;
   }
-/*  .input-form {
-    flex-direction: column;
-  }*/
 
   .input:first-child input {
     margin-bottom: 1.250em;
@@ -187,14 +182,3 @@ styling social icons
     align-items: center;
   }
 }
-
-/*@media screen and (max-width:400px) {
-  .address {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .inner-address {
-    margin-bottom: 1.563em;
-  }
-}*/
