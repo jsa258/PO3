@@ -1,6 +1,7 @@
 
 body {
-  background-color: white;
+  /*background-color: #fff7f7;*/
+  background-color: #fff6f6;
 }
 
 /*
@@ -54,8 +55,9 @@ projects START
 .project-name {
   margin: 10% 8% 5% 35%;
   font-size: 4.0em;
-  width: 30%;
+  width: 50%;
   font-family: 'Libre Baskerville', serif;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 
@@ -65,7 +67,6 @@ projects START
 
 .work-des {
   margin-top: 20%;
-  background-color: white;
   display: flex;
   flex-direction: column;
 }
@@ -76,9 +77,9 @@ projects START
 }
 
 .work-des  a:hover {
-  background-color: #a34a28;
-  color:white;
-  width: 20%;
+  background-color: #f6e5e5;
+  color:#45454d;
+  width: 17%;
 }
 
 .work-des  a, .work-name {

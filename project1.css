@@ -7,6 +7,8 @@
 .Intro {
   display: flex;
   flex-direction: column;
+  background-color: #fff6f6;
+  height:70vh;
 }
 
 .Summary {
@@ -15,11 +17,13 @@
   flex-direction: row;
 }
 
+
 .title {
   font-size: 2.5em;
-  width: 30%;
+  width: 20%;
   margin: 5% 5% 5% 10%;
   font-family: 'Libre Baskerville', serif;
+  text-decoration: underline white;
 }
 
 .banner-img img {
@@ -28,8 +32,9 @@
 }
 
 .description {
-  width: 50%;
+  width: 100%;
   margin: 5% 10%;
+  padding: 1%;
 }
 
 .Summary2 {
@@ -55,7 +60,7 @@
 }
 
 .Concept {
-  margin: 10% 0%;
+  margin: 0% 0% 10% 0;
   display: flex;
   flex-direction: column;
 }
@@ -71,7 +76,7 @@
 }
 
 .Concept img {
-  max-width: 35%;
+  width: 35%;
   margin: 0% 10% 0% 0%;
 }
 
@@ -99,11 +104,9 @@
 .progress-child-img {
   display: flex;
   flex-direction: column;
-
 }
-
-.progress-child-img img {
-  width: 60%;
+.progress-child-img img{
+  width: 50%;
 }
 .child-img-top, .progress-child-img{
   display: flex;
@@ -118,7 +121,8 @@
   justify-content: space-around;
 }
 .child-img-bottom img,.child-img-top img{
-  width: 30%;
+  width: 36%;
+
 }
 .graphic {
   margin-top: 10%;

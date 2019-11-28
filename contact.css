@@ -1,12 +1,8 @@
-.nav {
-  background-color: white;
-}
-
 /*
 ABOUT START
 */
 h1 {
-  font-size: 2.2em;
+  font-size: 1.8em;
   text-align: left;
   font-family: 'Libre Baskerville', serif;
 }
@@ -16,134 +12,173 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: yellow;
 }
-.right-side{
-  width: 60%;
 
-  background-color: green;
+.right-side {
+  width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content:flex-end;
+  justify-content: flex-end;
 }
-.right-side-content{
+
+.right-side-content {
   padding-top: 3%;
-  background-color: white;
 }
 
-.right-side-content .about-des{
-    font-size: 0.9em;
-
+.right-side-content .about-des {
+  font-size: 0.9em;
 }
 
-.left-side{
+.left-side {
   width: 40%;
-  background-color: red;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  justify-content:flex-end;
-
-
+  justify-content: flex-end;
 }
-.left-side-content{
+
+.left-side-content {
   margin-top: 20%;
   position: relative;
-
 }
+
+.left-side-content img {
+  margin-bottom: 5%;
+}
+
 .aboutme {
+  margin-bottom: 8%;
   text-align: right;
-  font-size: 3.5em;
+  font-size: 3.0em;
 }
 
 .about-img {
   width: 40%;
   position: relative;
-  left:50%;
-
-
-
-/*  margin-top: 13%;
-  left: 20%;
-  position: absolute;*/
+  left: 50%;
 }
 
 .about-des {
-  margin: 0 5%;
+  margin: 0 3%;
   font-size: 1em;
+  width: 80%;
 }
 
 .social-links {
   margin-top: 5%;
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: flex-start;
   font-size: 1.4em;
 }
-.social-links a{
+
+.social-links a {
   padding: 0% 3%;
 }
 
+.social-links a :hover {
+  color: #ff5959;
+}
+/*
+Bottom info starts
+*/
 .more-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  height: auto;
   margin: 10% 10%;
 }
 
-.contact-info {
-  background-color: red;
+.info-child {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 3% 5%;
+  padding: 2%;
 }
 
-.ed-info {
-    background-color: green;
+.info-title {
+  font-size: 2.3em;
+  border-bottom: 10px solid white;
+  width: 40%;
 }
 
-.int-info {
-    background-color: yellow;
+.description {
+  margin-left: 30%;
 }
 
-@media screen and (max-width:900px){
-  .about{
+#educations .info-title {
+  width: 13%;
+}
+
+#skills .info-title {
+  width: 23%;
+}
+
+#experience .info-title {
+  width: 15%;
+}
+
+@media screen and (max-width:950px) {
+  .about {
     flex-direction: column;
   }
-  .right-side,.left-side{
+
+  .right-side, .left-side {
     width: 100%;
-    height:auto;
+    height: auto;
   }
-  .left-side-content{
+
+  .left-side-content {
     margin-top: 5%;
   }
-  .right-side-content .about-des{
+
+  .right-side-content .about-des {
     margin: 3% 13%;
     text-align: center;
   }
+
   .about-img {
     width: 30%;
-    left:35%;
+    left: 35%;
   }
-  .aboutme{
-    text-align:center;
+
+  .aboutme {
+    text-align: center;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
-@media screen and (max-width:820px){
+
+@media screen and (max-width:850px) {
   .more-info {
     display: flex;
     flex-direction: column;
   }
-  .contact-info,.int-info {
+
+  .contact-info, .int-info {
     margin-top: 5%;
   }
 }
-@media screen and (max-width:500px){
+
+@media screen and (max-width:500px) {
   .about-img {
-    left:28%;
-    width:45%;
+    left: 28%;
+    width: 45%;
   }
-  .right-side-content .about-des{
+
+  .right-side-content .about-des {
     margin: 5% 10%;
   }
 
+  .info-child {
+    width: 85%;
+    margin: 3% 5%;
+    padding: 1%;
+  }
 }
+
 /*
 @media screen and (max-width:550px) {
 

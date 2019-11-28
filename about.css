@@ -20,14 +20,15 @@ begin contact us information
 
 .inner-container {
   display: flex;
-  flex-direction: inner-container;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
+  margin: 0% 0% 0% 10%;
 }
 
 .column {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   flex-basis: 100%;
   flex: 1;
 }
@@ -35,25 +36,31 @@ begin contact us information
 .container-left {
   width: 100%;
 }
+.container-right {
+  flex-direction: inner-container;
+  height: auto;
+  width: 90%;
+}
 
 .form h2 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Libre Baskerville', serif;
   text-align: left;
   color: #0b4235;
   margin-bottom: 3.125em;
   width: 95%;
-  font-size: 1.438em;
+  font-size: 1.238em;
+  line-height: 1.5em;
 }
 
 .form, .contact-form {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Libre Baskerville', serif;
   align-items: left;
-  margin: 1.875em;
+  margin: 1.775em;
   padding: 0em 2.500em;
 }
 
 .form-heading, h2 {
-  font-size: 1.875em;
+  font-size: 1.7em;
   margin-bottom: 1.250em;
   color: #0b4235;
   text-align: left;
@@ -74,7 +81,7 @@ begin contact us information
 .input>input {
   border: 1px solid grey;
   align-items: center;
-  width: 13.750em;
+  width: 25em;
   padding: 8px 2.500em;
 }
 
@@ -103,11 +110,6 @@ color: #f9cbbb;
   height: 9.375em;
 }
 
-.container-right {
-  flex-direction: inner-container;
-  height: auto;
-}
-
 .contact-form .container-items  {
   display: block;
   padding:0.938em 0.938em 1.250em 0em;
@@ -119,7 +121,7 @@ color: #f9cbbb;
   font-size: 1em;
 }
 .container-items p{
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Ubuntu', sans-serif;
   color: #0b4235;
   font-size: 1.125em;
 }
@@ -136,10 +138,10 @@ color: #f9cbbb;
 submit button
 */
 .btn {
-  font-family: 'Cormorant Garamond', serif;
+font-family: 'Libre Baskerville', serif;
   border: 1px solid grey;
-  padding: 0.938em 1.250em;
-  width: 11.250em;
+  padding: 1em;
+  width: 9.2em;
   cursor: pointer;
   transition: all 0.5 ease;
   text-align: center;
@@ -157,17 +159,23 @@ styling social icons
 */
 
 
-@media screen and (max-width:56.250em) {
-  .input-form {
+@media screen and (max-width:900px) {
+  .inner-container {
+    display: flex;
     flex-direction: column;
+    margin: 0%;
+    width: 100%;
   }
+/*  .input-form {
+    flex-direction: column;
+  }*/
 
   .input:first-child input {
     margin-bottom: 1.250em;
   }
 
   .form .input input {
-    width: 100%;
+    width: 80%;
   }
 
   .container-right, .container-left {
@@ -180,7 +188,7 @@ styling social icons
   }
 }
 
-@media screen and (max-width:36.250em) {
+/*@media screen and (max-width:400px) {
   .address {
     flex-direction: column;
     align-items: center;
@@ -189,4 +197,4 @@ styling social icons
   .inner-address {
     margin-bottom: 1.563em;
   }
-}
+}*/
