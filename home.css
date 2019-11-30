@@ -148,12 +148,14 @@ projects START
 .Work {
   display: flex;
   flex-direction: row;
+  flex-wrap:wrap;
   margin: 0% 0% 10% 0%;
 }
 
 .work-img {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: flex-end;
   width: 55%;
 }
@@ -226,6 +228,14 @@ projects START
   font-size: 1em;
   float: left;
 }
+@media screen and (max-width:1000px){
+  .project-name{
+    font-size: 2.5em;
+  }
+#project-b .project-name {
+      font-size: 2.2em;
+  }
+}
 
 @media screen and (max-width:850px) {
   .Work {
@@ -240,7 +250,7 @@ projects START
   .project-name {
     text-align: center;
     width: 100%;
-    font-size: 3em;
+    font-size: 2.9em;
     margin: 8% 0%;
   }
 

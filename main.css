@@ -143,11 +143,11 @@ body {
 }
 .Imagery .pics{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap:wrap;
 }
 .Imagery img{
-  width: 35%;
+  width: 65%;
 }
 @media screen and (max-width:1050px) {
   body {
@@ -171,13 +171,7 @@ body {
   .new-section {
     margin-top: 10%;
   }
-  .Imagery .pics{
-    display: flex;
-    flex-direction: column;
-  }
-  .Imagery img{
-    width: 80%;
-  }
+
   #paragraphs {
     width: 90%;
   }
